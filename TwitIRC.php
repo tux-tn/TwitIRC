@@ -14,7 +14,7 @@ $minute = 15; // Interval in minutes of checking for new tweets
 $socket = fsockopen($server,$port);
 if(!$socket)
 {
-        echo 'Impossible de se connecter';
+        echo "Can't connect to the server";
         exit;
 }
 fputs($socket, "USER $pseudo $pseudo $pseudo $pseudo\r\n");
