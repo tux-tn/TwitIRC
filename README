@@ -2,3 +2,10 @@ TwitIRC v1.0
 -----
 Simple Twitter IRC Bot showing the last tweets of an account on an IRC channel
 
+Dependancies:
+php-cURL
+php-cli
+
+Installation:
+git clone 'git@github.com:tux-tn/TwitIRC.git'
+php TwitIRC/TwitIRC.php &
