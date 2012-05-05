@@ -6,13 +6,18 @@
 */
 set_time_limit(0);
 $channel = "#TwitIRC"; // Channel where the bot can connect , you can use "#channel1,#channel2,#channel3"
-$pseudo = "TwitIRC"; // Bot Nickname
-$server = "irc.freenode.net"; // IRC server 
-$port = "6667"; // The port of the IRC server
+$pseudo  = "TwitIRC"; // Bot Nickname
+$server  = "irc.freenode.net"; // IRC server 
+$port    = "6667"; // The port of the IRC server
 $account = "support"; // Twitter username
+<<<<<<< HEAD
 $minute = 15; // Interval in minutes of checking for new tweets
 $pattern = '$\b(https?|ftp|file)://[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|]$i'; // Awesome brain fuck :D
 $socket = fsockopen($server,$port);
+=======
+$minute  = 15; // Interval in minutes of checking for new tweets
+$socket  = fsockopen($server,$port);
+>>>>>>> toutouastro/master
 if(!$socket)
 {
         echo "Can't connect to the server";
